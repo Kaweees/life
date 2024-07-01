@@ -41,6 +41,7 @@ void setToroidalGrid(ToroidalGrid *grid, int x, int y, CellOptions value);
 /* Returns the number of alive neighbors of a cell */
 int countAliveNeighbors(ToroidalGrid *grid, int x, int y);
 
-/* Returns the state of a cell in the next generation */
+/* Returns the state of cells in the next generation */
+void updateBoard(ToroidalGrid **grid);
 
 #endif /* LIFE_H */
